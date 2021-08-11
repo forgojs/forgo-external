@@ -37,9 +37,9 @@ function createElement(type, props) {
     props = props !== null && props !== void 0 ? props : {};
     props.children =
         arguments.length > 3
-            ? Array.from(arguments).slice(2)
+            ? flatten(Array.from(arguments).slice(2))
             : arguments.length === 3
-                ? [arguments[2]]
+                ? flatten(arguments[2])
                 : undefined;
     const key = (_a = props.key) !== null && _a !== void 0 ? _a : undefined;
     return { type, props, key, __is_forgo_element__: true };
@@ -683,9 +683,7 @@ function createForgoInstance(customEnv) {
       Mount will render the DOM as a child of the specified container element.
     */
     function mount(forgoNode, container) {
-        let parentElement = (isString(container)
-            ? env.document.querySelector(container)
-            : container);
+        let parentElement = (isString(container) ? env.document.querySelector(container) : container);
         if (parentElement) {
             if (parentElement.nodeType === ELEMENT_NODE_TYPE) {
                 return internalRender(forgoNode, {
