@@ -21,6 +21,6 @@
     "webpack-cli": "^4.7.2"
   },
   "dependencies": {
-    "forgo": "^1.2.2"
+    "forgo": "^1.2.3"
   }
 }

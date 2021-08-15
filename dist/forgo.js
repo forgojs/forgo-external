@@ -689,7 +689,7 @@ function createForgoInstance(customEnv) {
                 return internalRender(forgoNode, {
                     type: "search",
                     currentNodeIndex: 0,
-                    length: 0,
+                    length: parentElement.childNodes.length,
                     parentElement,
                 }, []);
             }
