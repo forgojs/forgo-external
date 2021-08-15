@@ -1,6 +1,6 @@
 {
   "name": "forgo-external",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Forgo.js external bundle for CDNs",
   "scripts": {
     "build": "rm -rf build && npx webpack --output-filename forgo.min.js  --mode=production && npx webpack --output-filename forgo.js --devtool=source-map --mode=development"
