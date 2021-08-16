@@ -263,7 +263,7 @@ function createForgoInstance(customEnv) {
                 // No matching node found
                 else {
                     // Wasn't found. Get rid of remaining nodes.
-                    unloadNodes(sliceDOMNodes(childNodes, nodeInsertionOptions.currentNodeIndex, childNodes.length - 1), pendingAttachStates);
+                    unloadNodes(sliceDOMNodes(childNodes, nodeInsertionOptions.currentNodeIndex, childNodes.length), pendingAttachStates);
                     return addNewComponent();
                 }
             }
