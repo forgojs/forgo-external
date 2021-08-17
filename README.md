@@ -1,4 +1,14 @@
-# forgo-external
+# Deprecated
+
+This is no longer maintained. Use the minified bundle from forgo directly.
+
+Like this: 
+```js
+import { h, mount } from "https://cdn.jsdelivr.net/npm/forgo@1.3.1/dist/forgo.min.js"
+```
+
+
+## forgo-external
 
 Forgo.js external bundle for CDNs. The generate the files, run ```npm run build```.
 
